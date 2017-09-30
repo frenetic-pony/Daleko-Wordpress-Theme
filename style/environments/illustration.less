@@ -1,0 +1,129 @@
+// Illustrations 
+
+.con-illustration-wide {
+    width: 100vw;
+    margin-left: calc(~"-1 * ((100vw - 100%) / 2)");/* align left edge to the left edge of the viewport */
+    position: relative;
+    z-index: 9999; // To make Translation button moves under images
+    
+    img {
+        max-width: none;
+        min-width: 100vw;
+    }
+}
+
+.con-wide-gallery {
+    .margin-single;
+}
+
+.con-wide-gallery .con-illustration-wide {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.con-illustration, .con-illustration-wide {
+    .margin-single;
+
+    a {
+        &:hover,
+        &:active,
+        &:visited {
+            text-decoration: none;
+            border: 0 none;
+            box-shadow: none;
+        }
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .con-margins {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.con-table {
+    .margin-single;
+}
+
+
+// #### Full-page Tables
+
+.con-table-wide {
+    margin-top: 20px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 1rem;
+   .margin-single;
+}
+
+
+@media (max-width: 1000px) {
+    .con-table-wide {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+
+.con-table h3,
+.con-table-wide h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.con-table table {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.con-table table tr td {
+    border-bottom: 1px solid rgba(20,
+    20,
+    40,
+    0.03);
+    padding-right: 2em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+}
+
+/*To separate sections*/
+#theory-illusstration {
+    display: inline-block;
+    position: relative;
+    height: 462px;
+    width: 498px;
+    text-align: center;
+    /*margin:0 auto;*/
+}
+
+#theory-illusstration img {
+    position: absolute;
+    left: 0;
+    top:-10px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#theory-illusstration img.theory-illusstration-top:hover {
+    opacity: 0.1;
+}
+
+#theory-illusstration-captions {
+    margin-top: 40px;
+}
+
+#theory-illusstration a {
+    text-decoration: none;
+    border: 0 none;
+    box-shadow: none;
+}

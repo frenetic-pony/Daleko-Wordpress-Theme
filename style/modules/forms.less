@@ -1,0 +1,134 @@
+// Forms
+
+form button,
+form input[type="button"],
+form input[type="reset"],
+form input[type="submit"] {
+    font-size: 1em;
+    color: white;
+    text-shadow: 0 0 0 transparent;
+    border-style: solid;
+    border-width: 1px 1px 3px;
+    border-color: @color-accent;
+    border-radius: 3px;
+    background: @color-accent;
+    padding: 0.45em 1.286em;
+    .animation-transition (0.2s);
+    vertical-align: middle;
+}
+
+form button:hover,
+form input[type="button"]:hover,
+form input[type="reset"]:hover,
+form input[type="submit"]:hover {
+    background: @color-accent-light;
+    border-color: @color-accent-light;
+    color: #fff;
+    text-shadow: 0 0 0 transparent;
+    .animation-transition (0.15s);
+}
+
+form button:active,
+form input[type="button"]:active,
+form input[type="reset"]:active,
+form input[type="submit"]:active {
+    background: @color-accent-light;
+    border-color: @color-accent-light;
+    border-width: 3px 1px 1px;
+}
+
+form button:focus,
+form input[type="button"]:focus,
+form input[type="reset"]:focus,
+form input[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 1px 4px @color-accent-light;
+    .animation-transition (0.15s);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+    box-sizing: border-box;
+    color: #72727e;
+    border: 1px solid #d0d0d4;
+    border-radius: 3px;
+    .animation-transition (0.5s);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+    color: #434353;
+    outline: none;
+    box-shadow: 0 0 1px 4px #e8e8ea;
+    .animation-transition (0.15s);
+}
+
+.sidebar input[type="text"]:focus,
+.sidebar input[type="email"]:focus,
+.sidebar input[type="url"]:focus,
+.sidebar input[type="password"]:focus,
+.sidebar input[type="search"]:focus,
+.sidebar textarea:focus {
+    box-shadow: 0 0 1px 4px rgba(232, 232, 234, 0.3);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+    padding: 0.2962962963em 0.4444444444em;
+}
+
+textarea {
+    padding: 0.2962962963em 0.4444444444em;
+    width: 100%;
+}
+
+.post-password-form {
+    background: #f3f3f4;
+    padding: 3.375em 2.25em;
+}
+
+.post-password-form p {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.post-password-form p:first-child {
+    font-size: 0.6666666667em;
+    text-transform: uppercase;
+    letter-spacing: 0.0501777168em;
+    line-height: 1.5em;
+    text-transform: none;
+}
+
+.post-password-form label {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 0.6666666667em;
+    clear: both;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 0.6666666667em;
+    color: #d0d0d4;
+}
+
+.post-password-form input[type="password"] {
+    display: block;
+    margin-bottom: 0.6666666667em;
+    width: 100%;
+}
+
+.post-password-form input[type="submit"] {
+    display: block;
+}
+

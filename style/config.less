@@ -1,0 +1,33 @@
+/* CONFIGURATION */
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,600,700,800&amp;subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,700&amp;subset=cyrillic");
+
+// Theme / Fonts
+@base-font: "Fira Sans", "Helvetica", "Arial", sans-serif; 
+@monospace-font: "Fira Mono", monospace;
+
+// Theme / Fonts /Weights
+@font-normal: 400;
+@font-light: @font-normal - 100;
+@font-medium: @font-normal + 100;
+@font-bold: @font-normal + 200;
+@font-heavy: @font-normal + 300;
+
+// Theme / Base sizes
+@base-font-size: 2rem;
+@line-height: 1.6;
+@max-width: 770px;
+
+@leading: @base-font-size;
+
+@screen-small: 480px;
+
+// Colors
+@color-font-body: #161616;
+@color-font-figcaption: lighten(@color-font-body, 40%);
+@color-accent: #3333ff;
+@color-accent-light: lighten(@color-accent, 30%);
+@color-accent-selection: fade(@color-accent, 40%);
+@color-grey-light: #f3f3f4;
+@color-yellow-light: #F9F7E2;

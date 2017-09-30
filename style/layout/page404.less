@@ -1,0 +1,98 @@
+// Page 404
+
+.error404 {
+    background: black;
+}
+.error404 h1.page-title {
+    color: white;
+}
+
+.error404 .site-main {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 5.0625em 0 0;
+}
+
+.error404 .not-found {
+    position: absolute;
+    top: 45%;
+    .animation-transformY (-45%);
+    width: 100vw;
+}
+
+.error404 .not-found .page-header,
+.error404 .not-found .page-content {
+    padding: 0 1em;
+    margin: 0 auto;
+    max-width: 38.443359375em;
+    color: white;
+}
+
+.error404 article {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border-bottom: 0;
+    background: #141428;
+    overflow: hidden;
+}
+
+.error404 article:nth-child(even) {
+    background: rgba(20, 20, 40, 0.95);
+}
+
+.error404 article .section-inner {
+    position: absolute;
+    top: 50%;
+    .animation-transformY (-50%);
+    width: 100vw;
+}
+
+.error404 article .entry-header {
+    padding: 0 1em;
+    margin: 0 auto;
+    max-width: 38.443359375em;
+}
+
+@media (min-width: 1400px) {
+    .error404 article .entry-header {
+        font-size: 1em;
+    }
+
+    .error404 article .entry-header.sidebar-toggled {
+        font-size: 1em;
+    }
+}
+
+.error404 article .entry-header .entry-title {
+    margin-top: 0;
+    margin-bottom: 0.2962962963em;
+}
+
+.error404 article .entry-header .entry-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.error404 article .entry-header .entry-title a:hover {
+    color: #eb6e78;
+}
+
+.error404.header-image .site-header-image {
+    display: none;
+}
+
+.error404 .site-content,
+.search-no-results .site-content {
+    padding-bottom: 100px;
+}
+
+.error404 .site-footer,
+.search-no-results .site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}

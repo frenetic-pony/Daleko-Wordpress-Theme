@@ -1,0 +1,33 @@
+// Margins
+.margin-single {
+	margin-top: @leading + 2;
+	margin-bottom: @leading + 2;
+}
+
+.margin-double {
+	margin-top: @leading + 4;
+	margin-bottom: @leading + 4;
+}
+
+// Animation
+.animation-transformY (@i){
+	-webkit-transform: translateY(@i);
+    -moz-transform: translateY(@i);
+    -ms-transform: translateY(@i);
+    -o-transform: translateY(@i);
+    transform: translateY(@i);
+}
+.animation-transformX (@i){
+	-webkit-transform: translateX(@i);
+    -moz-transform: translateX(@i);
+    -ms-transform: translateX(@i);
+    -o-transform: translateX(@i);
+    transform: translateX(@i);
+}
+
+.animation-transition (@n){
+    -webkit-transition: all @n ease-in-out;
+    -moz-transition: all @n ease-in-out;
+    -o-transition: all @n ease-in-out;
+    transition: all @n ease-in-out;
+}

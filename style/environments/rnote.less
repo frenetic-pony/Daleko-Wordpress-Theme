@@ -1,0 +1,56 @@
+// Russian notes
+
+// Notes with russian translation
+
+.rnote_text {
+    background: @color-yellow-light !important;
+    padding-top: 1.5rem;
+    padding-left: @leading;
+    padding-right: @leading;
+    padding-bottom: .5em;
+    margin: 1.4rem -2rem 1.4rem -2rem;
+    display: none; // Элемент по умолчанию скрыт пока не нажмешь на кнопку
+
+    h3 {
+        margin-top: 4px;
+    }
+
+    p:last-child {
+        margin-bottom: 0.4rem
+    }
+}
+
+
+.rnote {
+    cursor: pointer;
+    float: left;
+    color: @color-font-body;
+    font-size: 14px;
+    margin-left: -124px;
+    margin-top: 7px;
+    opacity: 0.4;
+    .animation-transition (0.3s);
+}
+
+@media (max-width: 960px) {
+    .rnote {
+        font-size: 16px;
+        float: none;
+        margin-left: 0;
+        margin-top: 1em;
+    }
+}
+
+.rnote:hover {
+    opacity: 1;
+}
+
+.translation {
+    background: black;
+    width: 26px;
+    height: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+}

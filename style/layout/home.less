@@ -1,0 +1,124 @@
+// Home
+
+.blog-home-content .site-main {
+    overflow: hidden;
+    background: #000000;
+}
+
+.blog-home-content .section-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.8s ease-in-out;
+}
+
+.blog-home-content article:hover .section-image {
+    -webkit-animation: opacity: 0.5;
+    -moz-animation: opacity: 0.5;
+    opacity: 0.6;
+}
+
+.blog-home-content article {
+    -webkit-animation: fadein 2s ease-out backwards;
+    -moz-animation: fadein 2s ease-out backwards;
+    animation: fadein 2s ease-out backwards;
+    position: relative;
+    width: 50%;
+    height: 50vw;
+    margin: 0;
+    padding: 0;
+    float: left;
+    border-bottom: 0;
+    overflow: hidden;
+}
+
+.blog-home-content article:first-child {
+    width: 100%;
+    height: 100vh;
+}
+
+@media (max-width: 800px) {
+    .blog-home-content article {
+        width: 100%;
+        height: 100vh;
+        float: none;
+    }
+
+    .blog-home-content article:first-child {
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.blog-home-content article:last-child {
+    clear: right;
+}
+
+.blog-home-content article .section-inner {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    .animation-transformY (-50%);
+    .animation-transition (0.4s);
+}
+
+.blog-home-content article .entry-header {
+    padding: 0 2em;
+    margin: 0 auto;
+    max-width: 95%;
+    vertical-align: baseline;
+    text-align: left;
+}
+
+.blog-home-content article .entry-header .entry-title {
+    font-size: 56px;
+    margin-top: 0;
+    margin-bottom: 0.3;
+}
+
+@media (max-width: 800px) {
+    .blog-home-content article .entry-header .entry-title {
+        font-size: 40px;
+        margin-bottom: 0.1;
+    }
+}
+
+.blog-home-content article .entry-header .entry-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.blog-home-content article .entry-header .entry-title a:hover {
+    color: white;
+}
+
+.blog-home-content article .entry-subtitle a {
+    text-decoration: none;
+    text-align: left;
+    color: white;
+}
+
+.blog-home-content article .entry-subtitle a {
+    font-size: 16px;
+}
+
+.blog-home-content article:first-child .entry-header {
+    font-size: 1em;
+}
+
+@media (min-width: 1100px) {
+    .blog-home-content article:first-child .entry-header {
+        font-size: 1em;
+        max-width: 50%;
+    }
+}
+
+.blog-home-content .posts-navigation {
+    padding: 1em;
+    margin: 1em auto 0;
+    max-width: @max-width;
+}
