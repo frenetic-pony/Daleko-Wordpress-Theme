@@ -181,6 +181,18 @@ if ( !is_admin() ) {
     add_action('init', 'register_my_js');
 }
 
+/* Add even or odd class to posts */
+
+function oddeven_post_class ( $classes ) {
+   global $current_class;
+   $classes[] = $current_class;
+   $current_class = ($current_class == 'odd') ? 'even' : 'odd';
+   return $classes;
+}
+add_filter ( 'post_class' , 'oddeven_post_class' );
+global $current_class;
+$current_class = 'odd';
+
 /**
  * Implement the Custom Header feature.
  */
