@@ -16,7 +16,7 @@
   <div class="footer-cont1"><p>A guide to Kiwi and Russian culture. We share a love for beer, pies and talking nonsense.</p>
 <p>Sound sweet as? Поехали!</p></div>
   <div class="footer-cont2">
-<img src="http://localhost/wordpress/wp-content/uploads/icons/DalekoBiglogo.svg" width="220px;">
+<img src="<?php bloginfo('stylesheet_directory'); ?>/images/daleko-big-logo.svg" width="220px;">
 </div>
   <div class="footer-cont3">
     <div class="foot_media" >

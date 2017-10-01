@@ -24,10 +24,70 @@
     -o-transform: translateX(@i);
     transform: translateX(@i);
 }
-
 .animation-transition (@n){
     -webkit-transition: all @n ease-in-out;
     -moz-transition: all @n ease-in-out;
     -o-transition: all @n ease-in-out;
     transition: all @n ease-in-out;
+}
+
+
+.transition (@transition) {
+    -webkit-transition: @transition;  
+    -moz-transition:    @transition;
+    -ms-transition:     @transition; 
+    -o-transition:      @transition;  
+}
+.transform (@transform) {
+    -webkit-transform:   @transform;
+    -moz-transform:      @transform;
+    -ms-transform:       @transform;
+    -o-transform:        @transform;
+}
+.transform-origin (@transform) {
+    -webkit-transform-origin: @transform;
+    -moz-transform-origin: @transform;
+    -ms-transform-origin: @transform;
+    -o-transform-origin: @transform;
+    transform-origin: @transform;
+}
+
+.animation (@animation) {
+    -webkit-animation: @animation;
+    -moz-animation: @animation;
+    animation: @animation;
+}
+
+.transition-full (@duration) {
+    -webkit-transition-property: color, background, opacity, width;
+    -moz-transition-property: color, background, opacity, width;
+    transition-property: color, background, opacity, width;
+    -webkit-transition-duration: @duration;
+    -moz-transition-duration: @duration;
+    transition-duration: @duration;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.transition-full-a (@duration) {
+    -webkit-transition-property: color, background, opacity, -webkit-transform;
+    -moz-transition-property: color, background, opacity, -moz-transform;
+    transition-property: color, background, opacity, transform;
+    -webkit-transition-duration: @duration;
+    -moz-transition-duration: @duration;
+    transition-duration: @duration;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.transition-full-b (@duration) {
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: @duration;
+    -moz-transition-duration: @duration;
+    transition-duration: @duration;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }

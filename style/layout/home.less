@@ -28,7 +28,7 @@
     animation: fadein 2s ease-out backwards;
     position: relative;
     width: 50%;
-    height: 50vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
     float: left;
@@ -60,17 +60,14 @@
 
 .blog-home-content article .section-inner {
     position: absolute;
-    top: 50%;
-    width: 100%;
-    .animation-transformY (-50%);
+    left: 0;
+    bottom: 0;
+    padding: 10%;
     .animation-transition (0.4s);
 }
 
 .blog-home-content article .entry-header {
-    // padding: 0 2em;
-    margin: 0 auto;
-    max-width: 80%;
-    vertical-align: baseline;
+    // margin: 0 auto;
     text-align: left;
 }
 
@@ -110,23 +107,40 @@
     font-size: 1em;
 }
 
+
 @media (min-width: 1100px) {
     .blog-home-content article:first-child .entry-header,
      .blog-home-content article:last-child.section.even .entry-header {
         font-size: 1em;
-        max-width: 840px;
+        max-width: 1000px;
+    }
+    .blog-home-content article:first-child .entry-header .entry-title,
+     .blog-home-content article:last-child.section.even .entry-header .entry-title {
+        max-width: 860px;
     }
 }
 
 .blog-home-content .posts-navigation {
-    padding: 1em;
-    margin: 1em auto 0;
-    max-width: @max-width;
+    padding: 0 150px;
+    margin-top: @leading * 3;
+    margin-bottom: @leading * 6;
+
+    .nav-previous {
+        text-align: left;
+    }
+
+    .nav-next {
+        text-align: right;
+    }
 }
 
 .blog-home-content article:last-child.section.even {
     width: 100%;
     height: 100vh;
+}
+
+.blog-home-content article:last-child.section.even .section-inner {
+    padding: 10%;
 }
 
 .home > .site {

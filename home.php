@@ -23,7 +23,10 @@ get_header(); ?>
 			<?php endwhile; ?>
 			</div>
 
-			<?php the_posts_navigation(); ?>
+			<?php the_posts_navigation(array(
+			'next_text' => '<span class="meta-nav">Newer posts →</span> ' ,
+			'prev_text' => '<span class="meta-nav">← Older posts</span> ' ,
+		)); ?>
 
 		<?php else : ?>
 

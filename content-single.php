@@ -16,7 +16,7 @@
         <!-- .entry-header -->
 
         <div class="entry-content">
-            <div id='rnote' class='rnote'>In Russian&nbsp&nbsp<span style="font-size:1.3em; vertical-align:-2.5px;" class="yot"></span></div>
+            <div id='rnote' class='rnote'>In Russian&nbsp;<span style="font-size:1.3em; vertical-align:-2.5px;" class="yot"></span></div>
             <?php the_content(); ?>
 
             <?php
