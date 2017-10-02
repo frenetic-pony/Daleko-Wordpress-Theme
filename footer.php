@@ -16,7 +16,11 @@
   <div class="footer-cont1"><p>A guide to Kiwi and Russian culture. We share a love for beer, pies and talking nonsense.</p>
 <p>Sound sweet as? Поехали!</p></div>
   <div class="footer-cont2">
-<img src="<?php bloginfo('stylesheet_directory'); ?>/images/daleko-big-logo.svg" width="220px;">
+<div class="footer-logo">
+    <object id="logo" data="<?php bloginfo('stylesheet_directory'); ?>/images/daleko-big-logo.svg" type="image/svg+xml" style="pointer-events: none;" class="icon">
+ Daleko Logo
+        </object>
+</div>
 </div>
   <div class="footer-cont3">
     <div class="foot_media" >
