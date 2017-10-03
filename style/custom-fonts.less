@@ -1,182 +1,259 @@
-@font-face {
+
+.font-face(@font-family, @file-path, @font-weight, @font-style)
+{
+    @font-face
+    {
+        font-family: @font-family;
+        font-weight: @font-weight;
+        font-style: @font-style;
+
+        src:url('@{file-path}.ttf') format('truetype'),
+        url('@{file-path}.woff2') format('woff2'),
+        url('@{file-path}.woff') format('woff'),;
+    }
+}
+
+
+.font-face(Fira Sans, 'fonts/FiraSans-Book', 400, normal);
+.font-face(Fira Sans, 'fonts/FiraSans-BookItalic', 400, italic);
+
+.font-face(Fira Sans, 'fonts/FiraSans-Light', 300, normal);
+.font-face(Fira Sans, 'fonts/FiraSans-LightItalic', 300, italic);
+
+.font-face(Fira Sans, 'fonts/FiraSans-Medium', 500, normal);
+.font-face(Fira Sans, 'fonts/FiraSans-MediumItalic', 500, italic);
+
+.font-face(Fira Sans, 'fonts/FiraSans-Bold', 700, normal);
+.font-face(Fira Sans, 'fonts/FiraSans-BoldItalic', 700, italic);
+
+
+@font-face
+{
     font-family: 'sicon';
-    src : url('fonts/sicon.eot?b29o2l');
-    src : url('fonts/sicon.eot?b29o2l#iefix') format('embedded-opentype'),
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/sicon.eot?b29o2l');
+    src: url('fonts/sicon.eot?b29o2l#iefix') format('embedded-opentype'),
     url('fonts/sicon.ttf?b29o2l') format('truetype'),
     url('fonts/sicon.woff?b29o2l') format('woff'),
     url('fonts/sicon.svg?b29o2l#sicon') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
-[class^="ficon-"],
-[class*=" ficon-"] {
+[class^='ficon-'],
+[class*=' ficon-']
+{
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'sicon' !important;
-    speak: none;
-    font-style: normal;
     font-weight: normal;
+    font-style: normal;
     font-variant: normal;
-    text-transform: none;
     line-height: 1;
+
+    text-transform: none;
+
     color: white;
 
+    speak: none;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.error404 [class^="ficon-"],
-[class*=" ficon-"] {
+.error404 [class^='ficon-'],
+[class*=' ficon-']
+{
     color: white;
 }
 
-.ficon-in {
-    &:before {
-        content: "\e902";
+.ficon-in
+{
+    &:before
+    {
+        content: '\e902';
     }
-    &:hover {
-        content: "\e902";
-        color: #E12F67;
+    &:hover
+    {
+        content: '\e902';
+
+        color: #e12f67;
     }
 }
 
-.ficon-tg {
-    &:before {
-        content: "\e900";
+.ficon-tg
+{
+    &:before
+    {
+        content: '\e900';
     }
-    &:hover {
-        content: "\e900";
-        color: #0088cc;
+    &:hover
+    {
+        content: '\e900';
+
+        color: #08c;
     }
 }
 
-.ficon-vk {
-    &:before {
-        content: "\e901";
+.ficon-vk
+{
+    &:before
+    {
+        content: '\e901';
     }
-    &:hover {
-        content: "\e901";
+    &:hover
+    {
+        content: '\e901';
+
         color: #45668e;
     }
 }
 
-.ficon-fb {
-    &:before {
-        content: "\ea90";
+.ficon-fb
+{
+    &:before
+    {
+        content: '\ea90';
     }
-    &:hover {
-        content: "\ea90";
-        color: #3B5998;
+    &:hover
+    {
+        content: '\ea90';
+
+        color: #3b5998;
     }
 }
 
-.ficon-tw {
-    &:before {
-        content: "\ea96";
+.ficon-tw
+{
+    &:before
+    {
+        content: '\ea96';
     }
-    &:hover {
-        content: "\ea96";
-        color: #55ACEE;
-    }
-}
+    &:hover
+    {
+        content: '\ea96';
 
-.ficon-yt {
-    &:before {
-        content: "\ea9e";
-    }
-    &:hover {
-        content: "\ea9e";
-        color: #CD201F;
+        color: #55acee;
     }
 }
 
-.ficon-pt {
-    &:before {
-        content: "\ead1";
+.ficon-yt
+{
+    &:before
+    {
+        content: '\ea9e';
     }
-    &:hover {
-        content: "\ead1";
-        color: #BD081B;
+    &:hover
+    {
+        content: '\ea9e';
+
+        color: #cd201f;
+    }
+}
+
+.ficon-pt
+{
+    &:before
+    {
+        content: '\ead1';
+    }
+    &:hover
+    {
+        content: '\ead1';
+
+        color: #bd081b;
     }
 }
 
 
 
 
-ul#socialmenu li {
+ul#socialmenu li
+{
     display: inline;
 }
 
-@font-face {
+@font-face
+{
     font-family: 'yot';
-    src : url('fonts/yot.eot?f8yvy');
-    src : url('fonts/yot.eot?f8yvy#iefix') format('embedded-opentype'),
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/yot.eot?f8yvy');
+    src: url('fonts/yot.eot?f8yvy#iefix') format('embedded-opentype'),
     url('fonts/yot.ttf?f8yvy') format('truetype'),
     url('fonts/yot.woff?f8yvy') format('woff'),
     url('fonts/yot.svg?f8yvy#yot') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
-[class^="yot"],
-[class*=" yot"] {
+[class^='yot'],
+[class*=' yot']
+{
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'yot' !important;
-    color: black;
-    font-style: normal;
     font-weight: normal;
+    font-style: normal;
     font-variant: normal;
-    text-transform: none;
     line-height: 1;
+
+    text-transform: none;
+
+    color: black;
     /* Better Font Rendering =========== */
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.yot:before {
-    content: "\e890";
+.yot:before
+{
+    content: '\e890';
 }
 
 
-@font-face {
+@font-face
+{
     font-family: 'logo';
-    src : url('fonts/logo.eot?sfyr98');
-    src : url('fonts/logo.eot?sfyr98#iefix') format('embedded-opentype'),
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('fonts/logo.eot?sfyr98');
+    src: url('fonts/logo.eot?sfyr98#iefix') format('embedded-opentype'),
     url('fonts/logo.ttf?sfyr98') format('truetype'),
     url('fonts/logo.woff?sfyr98') format('woff'),
     url('fonts/logo.svg?sfyr98#logo') format('svg');
-    font-weight: normal;
-    font-style: normal;
 }
 
-.site-logo {
+.site-logo
+{
     text-decoration: none;
 }
 
-.icon-logo {
+.icon-logo
+{
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'logo' !important;
-    speak: none;
-    color: white;
     font-style: normal;
-    text-transform: none;
-    text-decoration: none;
-    vertical-align: middle;
     line-height: 1;
 
+    -webkit-transition-duration: .5s;
+       -moz-transition-duration: .5s;
+            transition-duration: .5s;
     -webkit-transition-property: color,background,opacity,width;
-    -moz-transition-property: color,background,opacity,width;
-    transition-property: color,background,opacity,width;
+       -moz-transition-property: color,background,opacity,width;
+            transition-property: color,background,opacity,width;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: none;
 
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    transition-duration: 0.5s;
+    color: white;
 
-    &:before {
-        content: "\e700";
+    speak: none;
+    &:before
+    {
+        content: '\e700';
     }
-    &::hover {
-        color: rgba(232, 232, 234, 0.7);
+    &::hover
+    {
+        color: rgba(232, 232, 234, .7);
     }
 }
