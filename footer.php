@@ -24,14 +24,14 @@
 </div>
   <div class="footer-cont3">
     <div class="foot_media" >
-            <li><a href="https://twitter.com/dalekoblog" title="Twitter" class="twitter" target="_blank"><span style="font-size:1em;" class="ficon-tw"></span></a></li>
-             <li><a href="https://facebook.com/DalekoBlog/" title="Facebook" class="facebook" target="_blank"><span style="font-size:1em;" class="ficon-fb"></span></a></li>
-             <li><a href="https://vk.com/dalekoblog" title="VK" class="vk" target="_blank"><span style="font-size:1.05em;"  class="ficon-vk"></span></a></li>
-             <li><a href="https://www.youtube.com/channel/UCzvwTLrvcvJ-DV6XRNShW-Q" title="Youtube" class="youtube" target="_blank"><span style="font-size:1.25em;" class="ficon-yt"></span></a></li>
+            <li><a href="https://twitter.com/dalekoblog" title="Twitter" class="twitter" target="_blank"><span style="font-size:1em;" class="daleko-twitter"></span></a></li>
+             <li><a href="https://facebook.com/DalekoBlog/" title="Facebook" class="facebook" target="_blank"><span style="font-size:1em;" class="daleko-facebook"></span></a></li>
+             <li><a href="https://vk.com/dalekoblog" title="VK" class="vk" target="_blank"><span style="font-size:1.05em;"  class="daleko-vk"></span></a></li>
+             <li><a href="https://www.youtube.com/channel/UCzvwTLrvcvJ-DV6XRNShW-Q" title="Youtube" class="youtube" target="_blank"><span style="font-size:1.25em;" class="daleko-youtube"></span></a></li>
              <li><a href="https://t.me/dalekoblog" title="Telegram" class="telegram" target="_blank"><span
-             style="font-size:1em;" class="ficon-tg"></span></a></li>
-             <li><a href="https://pinterest.com/dalekoblog/" title="Pinterest" class="pinterest" target="_blank"><span  style="font-size:1.1em;"  class="ficon-pt"></span></a></li>
-            <li><a href="https://www.instagram.com/dalekoblog/" title="Instagram" class="instagram" target="_blank"><span class="ficon-in" style="font-size:1em;"></span></a></li>
+             style="font-size:1em;" class="daleko-telegram"></span></a></li>
+             <li><a href="https://pinterest.com/dalekoblog/" title="Pinterest" class="pinterest" target="_blank"><span  style="font-size:1.1em;"  class="daleko-pinterest"></span></a></li>
+            <li><a href="https://www.instagram.com/dalekoblog/" title="Instagram" class="instagram" target="_blank"><span class="daleko-instagram" style="font-size:1em;"></span></a></li>
 </div>
 </div>
   <div class="footer-cont4">Dalёko 2017 Russia — New Zealand</div>

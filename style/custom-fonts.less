@@ -1,259 +1,170 @@
-
-.font-face(@font-family, @file-path, @font-weight, @font-style)
-{
-    @font-face
-    {
-        font-family: @font-family;
-        font-weight: @font-weight;
-        font-style: @font-style;
-
-        src:url('@{file-path}.ttf') format('truetype'),
-        url('@{file-path}.woff2') format('woff2'),
-        url('@{file-path}.woff') format('woff'),;
-    }
-}
-
-
 .font-face(Fira Sans, 'fonts/FiraSans-Book', 400, normal);
 .font-face(Fira Sans, 'fonts/FiraSans-BookItalic', 400, italic);
-
 .font-face(Fira Sans, 'fonts/FiraSans-Light', 300, normal);
 .font-face(Fira Sans, 'fonts/FiraSans-LightItalic', 300, italic);
-
 .font-face(Fira Sans, 'fonts/FiraSans-Medium', 500, normal);
 .font-face(Fira Sans, 'fonts/FiraSans-MediumItalic', 500, italic);
-
 .font-face(Fira Sans, 'fonts/FiraSans-Bold', 700, normal);
 .font-face(Fira Sans, 'fonts/FiraSans-BoldItalic', 700, italic);
 
+.font-face(Fira Mono, 'fonts/FiraMono-Regular', 400, normal);
 
-@font-face
-{
-    font-family: 'sicon';
-    font-weight: normal;
-    font-style: normal;
+.font-face(DalekoIcons, 'fonts/DalekoIcons', 400, normal);
 
-    src: url('fonts/sicon.eot?b29o2l');
-    src: url('fonts/sicon.eot?b29o2l#iefix') format('embedded-opentype'),
-    url('fonts/sicon.ttf?b29o2l') format('truetype'),
-    url('fonts/sicon.woff?b29o2l') format('woff'),
-    url('fonts/sicon.svg?b29o2l#sicon') format('svg');
-}
+[class^='daleko-'],
+[class*=' daleko-'] {
 
-[class^='ficon-'],
-[class*=' ficon-']
-{
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'sicon' !important;
+    font-family: 'DalekoIcons' !important;
     font-weight: normal;
     font-style: normal;
     font-variant: normal;
     line-height: 1;
-
     text-transform: none;
-
     color: white;
-
-    speak: none;
-    /* Better Font Rendering =========== */
+    speak: none;    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.error404 [class^='ficon-'],
-[class*=' ficon-']
-{
-    color: white;
+// Social
+.daleko-telegram {
+    &:before {
+        content: @daleko-telegram;
+    }
+
+    &:hover {
+        content: @daleko-telegram;
+        color: @color-daleko-telegram;
+    }
+
 }
 
-.ficon-in
-{
-    &:before
-    {
-        content: '\e902';
+.daleko-vk {
+    &:before {
+        content: @daleko-vk;
     }
-    &:hover
-    {
-        content: '\e902';
 
-        color: #e12f67;
+    &:hover {
+        content: @daleko-vk;
+        color: @color-daleko-vk;
     }
+
 }
 
-.ficon-tg
-{
-    &:before
-    {
-        content: '\e900';
+.daleko-instagram {
+    &:before {
+        content: @daleko-instagram;
     }
-    &:hover
-    {
-        content: '\e900';
 
-        color: #08c;
+    &:hover {
+        content: @daleko-instagram;
+        color: @color-daleko-instagram;
     }
+
 }
 
-.ficon-vk
-{
-    &:before
-    {
-        content: '\e901';
+.daleko-facebook {
+    &:before {
+        content: @daleko-facebook;
     }
-    &:hover
-    {
-        content: '\e901';
 
-        color: #45668e;
+    &:hover {
+        content: @daleko-facebook;
+        color: @color-daleko-facebook;
     }
+
 }
 
-.ficon-fb
-{
-    &:before
-    {
-        content: '\ea90';
+.daleko-twitter {
+    &:before {
+        content: @daleko-twitter;
     }
-    &:hover
-    {
-        content: '\ea90';
 
-        color: #3b5998;
+    &:hover {
+        content: @daleko-twitter;
+        color: @color-daleko-twitter;
     }
+
 }
 
-.ficon-tw
-{
-    &:before
-    {
-        content: '\ea96';
+.daleko-pinterest {
+    &:before {
+        content: @daleko-pinterest;
     }
-    &:hover
-    {
-        content: '\ea96';
 
-        color: #55acee;
+    &:hover {
+        content: @daleko-pinterest;
+        color: @color-daleko-pinterest;
     }
+
 }
 
-.ficon-yt
-{
-    &:before
-    {
-        content: '\ea9e';
+.daleko-youtube {
+    &:before {
+        content: @daleko-youtube;
     }
-    &:hover
-    {
-        content: '\ea9e';
 
-        color: #cd201f;
+    &:hover {
+        content: @daleko-youtube;
+        color: @color-daleko-youtube;
     }
+
 }
 
-.ficon-pt
-{
-    &:before
-    {
-        content: '\ead1';
-    }
-    &:hover
-    {
-        content: '\ead1';
-
-        color: #bd081b;
-    }
-}
-
-
-
-
-ul#socialmenu li
-{
-    display: inline;
-}
-
-@font-face
-{
-    font-family: 'yot';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('fonts/yot.eot?f8yvy');
-    src: url('fonts/yot.eot?f8yvy#iefix') format('embedded-opentype'),
-    url('fonts/yot.ttf?f8yvy') format('truetype'),
-    url('fonts/yot.woff?f8yvy') format('woff'),
-    url('fonts/yot.svg?f8yvy#yot') format('svg');
-}
-
-[class^='yot'],
-[class*=' yot']
-{
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'yot' !important;
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1;
-
-    text-transform: none;
-
-    color: black;
-    /* Better Font Rendering =========== */
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.yot:before
-{
-    content: '\e890';
-}
-
-
-@font-face
-{
-    font-family: 'logo';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('fonts/logo.eot?sfyr98');
-    src: url('fonts/logo.eot?sfyr98#iefix') format('embedded-opentype'),
-    url('fonts/logo.ttf?sfyr98') format('truetype'),
-    url('fonts/logo.woff?sfyr98') format('woff'),
-    url('fonts/logo.svg?sfyr98#logo') format('svg');
-}
-
-.site-logo
-{
-    text-decoration: none;
-}
-
-.icon-logo
-{
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'logo' !important;
-    font-style: normal;
-    line-height: 1;
-
+// Logo
+.daleko-daleko-logo {
     -webkit-transition-duration: .5s;
        -moz-transition-duration: .5s;
             transition-duration: .5s;
-    -webkit-transition-property: color,background,opacity,width;
-       -moz-transition-property: color,background,opacity,width;
-            transition-property: color,background,opacity,width;
+            
+    -webkit-transition-property: color, background, opacity, width;
+       -moz-transition-property: color, background, opacity, width;
+            transition-property: color, background, opacity, width;
+
     vertical-align: middle;
     text-decoration: none;
     text-transform: none;
 
-    color: white;
-
-    speak: none;
-    &:before
-    {
-        content: '\e700';
+    &:before {
+        content: @daleko-daleko-logo;
     }
-    &::hover
-    {
+
+    &:hover {
+        content: @daleko-daleko-logo;
         color: rgba(232, 232, 234, .7);
     }
+
+}
+
+// Events
+.daleko-event-geo {
+    &:before {
+        content: @daleko-event-geo;
+    }
+
+}
+
+.daleko-event-phone {
+    &:before {
+        content: @daleko-event-phone;
+    }
+
+}
+
+.daleko-event-time {
+    &:before {
+        content: @daleko-event-time;
+    }
+
+}
+
+// Support
+.daleko-yot {
+    color: black;
+
+    &:before {
+        content: @daleko-yot;
+    }
+
 }

@@ -1,22 +1,19 @@
 /* CONFIGURATION */
 
-// @import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,500,600,700,800&amp;subset=cyrillic");
-// @import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,700&amp;subset=cyrillic");
-
 // Theme / Fonts
-@base-font: "Fira Sans", "Helvetica", "Arial", sans-serif; 
-@monospace-font: monospace;
+@base-font: 'Fira Sans', 'Helvetica', 'Arial', sans-serif;
+@monospace-font:'Fira Mono', monospace;
 
 // Theme / Fonts /Weights
 @font-normal: 400;
 @font-light: @font-normal - 100;
 @font-medium: @font-normal + 100;
-@font-bold: @font-normal + 200;
-@font-heavy: @font-normal + 300;
+@font-bold: @font-normal + 300;
+
 
 // Theme / Base sizes
 @base-font-size: 2rem;
-@line-height: 1.6;
+@line-height: 1.55;
 @max-width: 730px + 40px; // 40px padding;
 
 @leading: @base-font-size;
@@ -27,8 +24,30 @@
 // Colors
 @color-font-body: #161616;
 @color-font-figcaption: lighten(@color-font-body, 40%);
-@color-accent: #3333ff;
+@color-accent: #33f;
 @color-accent-light: lighten(@color-accent, 7%);
 @color-accent-selection: fade(@color-accent, 40%);
 @color-grey-light: #f3f3f4;
-@color-yellow-light: #F9F7E2;
+@color-yellow-light: #f9f7e2;
+
+@color-daleko-telegram: #08c;
+@color-daleko-vk: #45668e;
+@color-daleko-instagram: #e12f67;
+@color-daleko-facebook: #3b5998;
+@color-daleko-twitter: #55acee;
+@color-daleko-pinterest: #bd081b;
+@color-daleko-youtube: #cd201f;
+
+// Icons
+@daleko-telegram: '\61';
+@daleko-vk: '\62';
+@daleko-instagram: '\63';
+@daleko-facebook: '\64';
+@daleko-twitter: '\65';
+@daleko-pinterest: '\66';
+@daleko-daleko-logo: '\67';
+@daleko-event-geo: '\68';
+@daleko-event-phone: '\69';
+@daleko-event-time: '\6a';
+@daleko-yot: '\6b';
+@daleko-youtube: '\6c';

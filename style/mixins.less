@@ -91,3 +91,15 @@
     -moz-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
 }
+
+
+//Fonts
+.font-face(@font-family, @file-path, @font-weight, @font-style) {
+    @font-face {
+        font-family: @font-family;
+        font-weight: @font-weight;
+        font-style: @font-style;
+        src: url('@{file-path}.ttf') format('truetype'), url('@{file-path}.woff2') format('woff2'), url('@{file-path}.woff') format('woff'), ;
+    }
+
+}
