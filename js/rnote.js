@@ -1,7 +1,9 @@
 if (jQuery('.rnote').length) {
 
     // Create a clone of the menu, right next to original.
-    jQuery('.rnote').addClass('original').clone().insertAfter('.rnote').addClass('cloned').css('position', 'fixed').css('top', '1em').css('margin-top', '0').css('z-index', '500').css('margin-left', '0').removeClass('original').hide();
+    jQuery('.rnote').addClass('original').clone().insertAfter('.rnote').addClass('cloned').css('position', 'fixed').css('top', '25px').css('margin-top', '0').css('z-index', '500').css('margin-left', '0').removeClass('original').hide();
+
+scrollIntervalID = setInterval(stickIt, 10); // refresh rate for function
 
     function stickIt() {
         var orgElementPos = $('.original').offset();
@@ -30,9 +32,10 @@ if (jQuery('.rnote').length) {
     scrollIntervalID = setInterval(stickIt, 10);
 
 
+
     jQuery(function() {
         jQuery(".rnote").click(function() {
-            jQuery(".rnote_text").slideToggle("slow");
+            jQuery(".rnote_text").slideToggle(1800);
         });
     });
 }
