@@ -3,48 +3,52 @@
 // Notes with russian translation
 
 .rnote_text {
+    position: relative;
+    overflow: hidden;
+    display: none;
+  // Элемент по умолчанию скрыт пока не нажмешь на кнопку
+  
+    margin-left: -25px;
+    margin-bottom: 2rem;
+    margin-right: -25px;
+
+    border: 25px solid @color-yellow-light;
     background: @color-yellow-light !important;
-    margin: 1.4rem -2rem 1.4rem -2rem;
-    display: none; // Элемент по умолчанию скрыт пока не нажмешь на кнопку
 
     h3 {
         margin-top: 4px;
     }
 
     p:last-child {
-        margin-bottom: 0.4rem
+        margin-bottom: 0;
     }
 }
 
-.rnote_text {
-    padding-top: 1.5rem;
-    padding-left: @leading;
-    padding-right: @leading;
-    padding-bottom: .5em;
-}
-
-
 .rnote {
-    cursor: pointer;
+
+    position: sticky;
     float: left;
-    color: @color-font-body;
-    font-size: 14px;
     margin-left: -120px;
     margin-top: 7px;
+    top: 25px;
+
+
+    cursor: pointer;
+    
+    color: @color-font-body;
+    font-size: 14px;
     opacity: 0.4;
     .animation-transition (0.3s);
 
-    h1 {
-        margin-top: 0;
-    }
 }
 
 @media (max-width: 960px) {
     .rnote {
+        position: relative;
         font-size: 16px;
         float: none;
         margin-left: 0;
-        margin-top: 1em;
+        margin-top: @leading;
     }
 }
 
@@ -52,12 +56,6 @@
     opacity: 1;
 }
 
-.translation {
-    background: black;
-    width: 26px;
-    height: 20px;
-    text-align: center;
-    font-size: 18px;
-    color: white;
-    border-radius: 25px;
-}
+
+
+
