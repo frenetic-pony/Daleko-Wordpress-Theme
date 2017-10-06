@@ -11,5 +11,12 @@ $(document).ready(function() {
         $(".rnote_text").slideFadeToggle();
          return false;
    });
-
+    $(".rnote-arrow").click(function() {
+        $('html, body').animate({
+        scrollTop: $("#content").offset().top
+    }, 600);
+   });
 });
+
+
+

@@ -17,6 +17,7 @@
 
         <div class="entry-content">
             <div id='rnote' class='rnote'>In Russian&nbsp;<span style="font-size:1.3em; vertical-align:-2.5px;" class="daleko-yot"></span></div>
+            <div class="rnote-arrow">↑</div>
             <?php the_content(); ?>
 
             <?php
